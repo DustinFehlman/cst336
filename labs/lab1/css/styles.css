@@ -1,0 +1,81 @@
+body {
+    background-color: #300032;
+    color: #e6e6e8;
+}
+
+h1 {
+    font-family: 'Baumans', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+header,
+nav,
+main,
+footer {
+    text-align: center;
+}
+
+footer {
+    clear: left;
+}
+
+nav a {
+    /* links within the nac container */
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    border-bottom: 2px #c43235 solid;
+    font-size: 2em;
+    transition: .9s;
+    color: #e6e6e8;
+}
+
+table {
+    margin: 0px auto;
+}
+
+td {
+    padding-right: 10px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+td strong {
+    color: #e6e6e8;
+}
+
+ul {
+    text-align: left;
+    padding-left: 30%;
+}
+
+.hobby {
+    color: #c43235;
+}
+
+.table-row {
+    background-color: grey;
+}
+
+#content {
+    text-align: center;
+}
+
+#welcome-text,
+#main-profile-pic {
+    float: left;
+}
+
+#welcome-text {
+    padding-top: 5%;
+}
+
+#table-header {
+    background-color: #06000a;
+}
