@@ -18,6 +18,8 @@ footer {
 
 footer {
     clear: left;
+    font-size: .8em;
+    color: #517b96;
 }
 
 nav a {
@@ -28,7 +30,6 @@ nav a {
     text-decoration: none;
     color: white;
 }
-
 nav a:hover {
     border-bottom: 2px #c43235 solid;
     font-size: 2em;
@@ -74,8 +75,17 @@ ul {
 
 #welcome-text {
     padding-top: 5%;
+    text-align: left;
 }
 
 #table-header {
     background-color: #06000a;
+}
+
+#current-page{
+    color: #517b96;
+}
+
+#title-hr{
+    width: 50%;
 }
