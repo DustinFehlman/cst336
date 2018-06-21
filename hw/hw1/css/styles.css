@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 30px;
+}
+
+.wrapper{
+    width: 1200px;
+    min-width: 1138px; 
+}
+.source-links {
+    color: #b56969;
+}
+
+.nav-links {
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin: auto 30px;
+}
+
+.active-page {
+    border-bottom: 5px solid black;
+}
+
+.text-container {
+    position: fixed;
+}
+
+#main-img-container {
+    bottom: 90px;
+    height: 90%;
+    left:15%;
+    position: fixed
+}
+
+#main-img-home {
+    height: 100%;
+    width: auto;
+}
+
+#bottom-nav-container {
+    background-color: #fff;
+    text-align: center;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#title-container {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 3vmax;
+    color: #22264b;
+    text-align: center;
+    left: 40%;
+}
+
+#summary-container {
+    font-family: 'Anton', sans-serif;
+    width: 30%;
+    text-align: center;
+    overflow-y: auto;
+    font-size: 1.2vmax;
+    padding-right: 5px;
+    left: 50%;
+    top:15%;
+    border:3px solid black;
+     
+}

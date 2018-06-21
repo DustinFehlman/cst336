@@ -9,6 +9,16 @@
             </td>
         </tr>
     </table>
+    <table>
+        <tr>
+            <th>HW</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="hw/hw1/index.html">HW1</a>
+            </td>
+        </tr>
+    </table>
 <?php
 // A simple web site in Cloud9 that runs through Apache
 // Press the 'Run' button on the top to start the web server,
