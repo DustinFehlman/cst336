@@ -37,10 +37,16 @@ nav {
     font-family: 'Anton', sans-serif;
     font-size: 30px;
     margin: auto 30px;
+   
+}
+
+.nav-links:hover{
+    background-color: #000;
+    color: white;
 }
 
 .active-page {
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #000;
 }
 
 .title-container {
