@@ -52,7 +52,7 @@ nav {
 }
 
 .text-container {
-    max-height: 550px;
+    height: 525px;
     font-family: 'Anton', sans-serif;
     text-align: left;
     overflow-y: auto;
