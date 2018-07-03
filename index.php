@@ -7,6 +7,9 @@
             <td>
                 <a href="labs/lab1/index.html">Lab 1</a>
             </td>
+            <td>
+                <a href="labs/lab2/index.php">Lab 2</a>
+            </td>
         </tr>
     </table>
     <table>
