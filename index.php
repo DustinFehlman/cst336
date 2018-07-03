@@ -20,6 +20,9 @@
             <td>
                 <a href="hw/hw1/index.html">HW1</a>
             </td>
+            <td>
+                <a href="hw/hw2/index.php">HW2</a>
+            </td>
         </tr>
     </table>
 <?php
