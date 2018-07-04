@@ -10,6 +10,9 @@
             <td>
                 <a href="labs/lab2/index.php">Lab 2</a>
             </td>
+             <td>
+                <a href="labs/lab3/index.php">Lab 3</a>
+            </td>
         </tr>
     </table>
     <table>
