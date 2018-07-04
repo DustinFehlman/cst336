@@ -1,19 +1,25 @@
 <?php
     $backgroundImage = "img/sea.jpg";
     $showSlideShow = false;
+    $slideShowWidth = 600;
     
     if (isset($_GET['keyword']) && $_GET['keyword'] != "" || isset($_GET['catagory']) && $_GET['catagory'] != "") {
         $showSlideShow = true;
         include 'api/pixabayAPI.php';
         $catagory =  $_GET['catagory'];
         $keyword = $_GET['keyword'];
+        $layout = $_GET['layout'];
         if($catagory != ""){
             $searchFieldKeyword = $catagory;
         }
         else{
             $searchFieldKeyword = $keyword;
         }
-        $imageURLs = getImageURLs($searchFieldKeyword, $GET_['layout']);
+        
+        if($layout == "vertical"){
+            $slideShowWidth = 400;
+        }
+        $imageURLs = getImageURLs($searchFieldKeyword, $layout);
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
 ?>
@@ -38,7 +44,7 @@
                 from Pixaybay.com </h2>";
             } else {
         ?>
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style='width: <?php echo $slideShowWidth?>px'>
               <ol class="carousel-indicators">
                   <?php 
                     for($i=0; $i < 7; $i++){
@@ -82,10 +88,10 @@
         <form>
             <input type="text" name="keyword" placeholder"Keyword"/>
             <br>
-            <input type="radio" id="lhorizontal" name="layout" value="horizontal">
-            <label for="Horizontal"></label><lablel for="lhorizontal">Horizontal</lablel>
+            <input type= "radio" id="lhorizontal" name="layout" value="horizontal" checked>
+            <label for="lhorizontal">Horizontal</label>
             <input type = "radio" id="lvertical" name="layout" value="vertical">
-            <label for="Vertical"></label><label for="lvertical">Vertical</label>
+            <label for="lvertical">Vertical</label>
             <select name ="catagory">
                 <option value ="">Select One</option>
                 <option value="ocean">Sea</option>

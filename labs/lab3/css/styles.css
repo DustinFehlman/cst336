@@ -2,7 +2,12 @@
         opacity:0.9;
         width:100%;
         text-align:center;
-        color:yellow;
+        color:	#0000ff;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    label{
+        background-color: #fff;
     }
     
     input {
@@ -12,5 +17,4 @@
     
     #carousel-example-generic {
          margin: 0 auto;   
-         width: 700px;
     }
