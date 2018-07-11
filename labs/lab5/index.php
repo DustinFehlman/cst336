@@ -45,7 +45,7 @@ function displaySearchResults(){
         $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
         foreach ($records as $record){
-            echo"<a href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History</a> ";
+            echo"<a class=\"history-button\" href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History</a> ";
             echo $record["productName"]. " " . $record["productDesciption"] . " $" . $record["price"] . "<br /><br />";
         } 
     }
@@ -72,33 +72,35 @@ function displayCategories(){
 <html>
     <head>
         <title> OtterMArt Product Search</title>
-        <link href="css/styles.css" rel="stylesheet" type"test/css" /> 
+        <link href="css/styles.css" rel="stylesheet" type"text/css" /> 
     </head>
     <body>
-        <div>
-            <h1>OtterMart Product Search</h1>
-            <form>
-                Product: <input type="text" name="product"/>
+        <div class="wrapper">
+            <div class="search-controls">
+                <h1>OtterMart Product Search</h1>
+                <form>
+                    Product: <input type="text" name="product"/>
+                    <br>
+                    Catagory:
+                        <select name="category">
+                            <option value="">Select One</option>
+                            <?=displayCategories()?>
+                        </select>
+                    <br>
+                    Price: From <input type="text" name="priceFrom" size="7"/>
+                           To   <input type="text" name="priceTo" size="7"/>
+                    <br>
+                    Order result by:
+                    <br>
+                    <input type="radio" name="orderBy" value="price"/>Price 
+                    <br>
+                    <input type="radio" name="orderBy" value="name"/>Name 
+                    <br>
+                    <br>
+                    <input class="submit-button" type="submit" value="Search" name="searchForm" />
+                </form>
                 <br>
-                Catagory:
-                    <select name="category">
-                        <option value="">Select One</option>
-                        <?=displayCategories()?>
-                    </select>
-                <br>
-                Price: From <input type="text" name="priceFrom" size="7"/>
-                       To   <input type="text" name="priceTo" size="7"/>
-                <br>
-                Order result by:
-                <br>
-                <input type="radio" name="orderBy" value="price"/>Price 
-                <br>
-                <input type="radio" name="orderBy" value="name"/>Name 
-                <br>
-                <br>
-                <input type="submit" value="Search" name="searchForm" />
-            </form>
-            <br>
+            </div>
         </div>
         <hr>
         <?=displaySearchResults()?>
