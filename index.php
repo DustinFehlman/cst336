@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html><body>
     <table>
         <tr>
@@ -12,6 +13,9 @@
             </td>
              <td>
                 <a href="labs/lab3/index.php">Lab 3</a>
+            </td>
+            <td>
+                <a href="labs/lab5/index.php">Lab 5</a>
             </td>
         </tr>
     </table>
