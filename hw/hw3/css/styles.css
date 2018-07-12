@@ -1,0 +1,53 @@
+body{
+    background-color: #002a4e;
+}
+
+p{
+    margin: 0;
+}
+td{
+    width: 50%;
+}
+
+header{
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.results-td{
+    padding-left: 10px;
+}
+.main-content{
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+}
+.error-text{
+    color: red;
+}
+.form-table{
+     margin: 0 auto;
+}
+.submit-button{
+    float: right;
+    border-radius: 5px;
+    border: 1px solid #32cd32;
+    color: white;
+    background-color: #32cd32;
+    height: 20px;
+    width: auto;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    opacity: .8
+}

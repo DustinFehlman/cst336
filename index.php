@@ -33,6 +33,9 @@
             <td>
                 <a href="hw/hw2/index.php">HW2</a>
             </td>
+            <td>
+                <a href="hw/hw3/index.php">HW3</a>
+            </td>
         </tr>
     </table>
 <?php
