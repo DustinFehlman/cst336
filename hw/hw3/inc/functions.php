@@ -88,7 +88,7 @@ function getCreditLastInput(){
             echo $_SESSION["applicant"]['credits'];
         }
         else{
-            echo  "0";
+            echo  " ";
         }
     }
 }
