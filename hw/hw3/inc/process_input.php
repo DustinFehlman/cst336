@@ -59,7 +59,7 @@
     
     if(isset($_GET['credits'])){
       $credits = $_GET['credits'];
-      if($credits >= 0 && $credits <= 120){
+      if(($credits >= 0 && $credits <= 120) && $credits != " "){
         $csApplicant['credits'] = $credits;
       } else{
         $_SESSION["errors"] .= "- Please enter a valid amount of credits.<br>";

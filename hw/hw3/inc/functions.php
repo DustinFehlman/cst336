@@ -84,7 +84,7 @@ function getMATH130LastInput(){
 
 function getCreditLastInput(){
     if(isset($_SESSION["applicant"])){
-        if($_SESSION["applicant"]['credits'] != null){
+        if($_SESSION["applicant"]['credits'] != null ||$_SESSION["applicant"]['credits'] != " "){
             echo $_SESSION["applicant"]['credits'];
         }
         else{
