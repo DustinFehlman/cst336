@@ -60,8 +60,6 @@
                     </td>
                 </table>
             </div>
-            <footer>
-            </footer>
         </div>
     </body>
 </html>
