@@ -20,6 +20,12 @@
             <td>
                 <a href="labs/lab5/index.php">Lab 5</a>
             </td>
+             <td>
+                <a href="labs/lab6/index.php">Lab 6</a>
+            </td>
+             <td>
+                <a href="labs/lab7/index.php">Lab 7</a>
+            </td>
         </tr>
     </table>
     <table>
