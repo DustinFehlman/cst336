@@ -41,7 +41,6 @@ function checkLetter(letter) {
     if (positions.length > 0) {
         updateWord(positions, letter);
         if (!board.includes('_')) {
-            updateCookie();
             endGame(true);
         }
     }
@@ -98,26 +97,6 @@ function endGame(win) {
     }
     else {
         $('#lost').show();
-    }
-}
-
-function updateCookie(){
-    /*
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-        console.log(ca);
-        if(ca[i] === selectedWord){
-            return
-        }
-    }
-    */
-    document.cookie = "correctWord=" + selectedWord + ";"
-}
-
-function printCorrectWords(){
-    var ca = document.cookie.split(';');
-    for(var i = 0; i < ca.length; i++) {
-       $("#correct-guesses").append("<p>" + ca[i] + "</p>");
     }
 }
 
