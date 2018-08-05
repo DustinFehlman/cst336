@@ -26,6 +26,9 @@
              <td>
                 <a href="labs/lab7/index.html">Lab 7</a>
             </td>
+             <td>
+                <a href="labs/lab8/index.php">Lab 8</a>
+            </td>
         </tr>
     </table>
     <table>
