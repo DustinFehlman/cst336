@@ -11,8 +11,8 @@
     
     function loadCarousel(){
         global $picArr;
-        $imgHost = "/cst336/labs/lab8/img/";     
-        echo "<div class='carousel-item active'><img class='pics' src='". $imgHost . $picArr[0]['pictureURL'] . "' alt='animal".$x."'></div>";
+        $imgHost = "/labs/lab8/img/";     
+        echo "<div class='carousel-item active'><img class='pics' src='". $imgHost . $picArr[0]['pictureURL'] . "' alt='animal0".$x."'></div>";
         for($x=1; $x < sizeOf($picArr); $x++){
            echo "<div class='carousel-item'><img class='pics' src='". $imgHost . $picArr[$x]['pictureURL'] . "' alt='animal".$x."'></div>"; 
         }
