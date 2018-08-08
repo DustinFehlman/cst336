@@ -1,0 +1,35 @@
+.large-cart{
+    font-size: 50px;
+}
+
+.remove-from-cart-button{
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.purchase-button{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#cart-table{
+    width: 50%;
+    margin: 20px auto;
+}
+
+#cart-totals-row{
+    text-align: right;
+}
+
+#empty-cart-warning{
+    text-align: center;
+    display: none;
+}

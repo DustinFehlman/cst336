@@ -1,0 +1,61 @@
+.fa-caret-right{
+    font-size: 36px;
+}
+
+.fa-caret-down{
+    display: none;
+    font-size: 36px;
+}
+
+.add-to-cart-button{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-controls{
+    margin-top: 10px;
+}
+#main-search-div {
+    text-align: center;
+}
+
+#addtional-search-label {
+    vertical-align: 30%
+}
+
+#addtional-search-controls {
+    position: relative;
+    text-align: center;
+}
+
+#political-party{
+    position: relative;
+    left: 56px;
+}
+
+#addtional-search-options{
+    display: none;
+}
+
+#product-table{
+    width: 50%;
+    margin: 20px auto;
+}
+
+#product-table{
+    border-spacing: 50px;
+    border-collapse: separate;
+}
+
+#product-search-error{
+    display: none;
+}
+
+#product-search-none{
+    display: none;
+}
+

@@ -1,0 +1,84 @@
+.reports {
+    display: none;
+}
+
+#report-error {
+    display: none;
+}
+
+#admin-panel {
+    width: 80%;
+    margin: 0 auto;
+}
+
+tr:nth-child(even) {
+    background-color: #DDDAC7;
+}
+
+td, th {
+    text-align: left;
+    padding: 8px;
+}
+
+.row-edit-controls{
+    background-color: white;
+    font-size: 10px;
+    text-decoration: underline !important;
+    color: blue !important;
+    cursor: pointer;
+}
+
+.edit-submit{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-delete{
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.id-edit{
+    width: 80px !important;
+}
+
+.party-edit{
+    width: 80px !important;
+}
+
+.state-edit{
+    width: 80px !important;
+}
+
+.no-display{
+    display: none;
+}
+
+.product-td{
+    width: 160px;
+}
+
+.product-td-s{
+    width: 80px !important;
+}
+
+.edit-field{
+   width: 160px;
+   display: none;
+}
+
+.new-field{
+   width: 160px;
+}
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+body {
+    padding-bottom: 100px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+nav{
+    background-color: #002A4E;
+}
+
+.disabled{
+    cursor: not-allowed !important;
+    opacity: .5;  
+}
+
+.custom-nav{
+   color:white !important;
+}
+
+.active-nav{
+    color: #FFFFF0 !important;
+}
+
+.nav-bar-item{
+    color: white;
+}
+
+.reset-anchor{
+    font-size: 10px;
+    text-decoration: underline !important;
+    color: blue !important;
+    cursor: pointer; 
+}
+
+.error-font{
+    color: red;
+}
+
+.loading{
+    width: 100px;
+    height: 100px;
+    display: none;
+}
