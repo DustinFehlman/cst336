@@ -16,6 +16,10 @@
     margin-top: 10px;
 }
 
+.loading{
+    margin-top: 50px;
+}
+
 .search-controls{
     margin-top: 10px;
 }
@@ -58,4 +62,6 @@
 #product-search-none{
     display: none;
 }
+
+
 

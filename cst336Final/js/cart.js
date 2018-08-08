@@ -27,10 +27,14 @@ function loadCartTable() {
         }
         var cartTotal = sumCartPrice();
          $("#cart-table").append("<tr class='cart-table-row' id='cart-totals-row'>");
+         var totalPriceString = "<span>Total: $" + cartTotal + "</span>";
+         $("#cart-totals-row").append("<td colspan='4' class='cart-td'>" + totalPriceString + "<br></td>");
+         /* Will use once checkout view is built
          var checkoutButtonString = "<button class='purchase-button'>Purchase</button>";
          var totalPriceString = "<span>Total: $" + cartTotal + "</span>";
          $("#cart-totals-row").append("<td colspan='4' class='cart-td'>" + totalPriceString + "<br>" +
                                 checkoutButtonString + "</td>");
+        */
     }
 
 }

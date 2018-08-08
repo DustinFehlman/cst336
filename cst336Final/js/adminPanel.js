@@ -121,8 +121,8 @@ function submitProductEdits(itemID){
     var payload = {
         firstName:  $("#first-edit-" + itemID).val(),
         lastName:  $("#last-edit-" + itemID).val(),
-        state:  $("#first-edit-" + itemID).val(),
-        partyId:  1,
+        state: $("#state-edit-" + itemID).val(),
+        partyId: convertPartyID($("#party-edit-" + itemID).val()),
         price: $("#price-edit-" + itemID).val(),
         id: $("#id-edit-" + itemID).val(),
         imgURL: $("#img-edit-" + itemID).val()
@@ -135,6 +135,18 @@ function deleteProduct(itemID){
         id: $("#id-edit-" + itemID).val()
     }
     ajaxCall('post', 'inc/deleteProduct.php', payload, refreshPage, null);
+}
+
+function convertPartyID(letter){
+    if(letter == "D"){
+        return 1;
+    }
+    if(letter == "R"){
+        return 2;
+    }
+    if(letter == "I"){
+        return 3;
+    }
 }
 
 function submitNewProduct(){
@@ -162,7 +174,6 @@ function showAvgPrice(data, status) {
     }
 }
 
-//Still needs work
 function showPartyCount(data, status) {
     if (status === "success") {
         var parsedData = JSON.parse(data);
