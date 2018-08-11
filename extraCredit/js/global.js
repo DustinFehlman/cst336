@@ -46,7 +46,7 @@ function parseSearchMovieResponse(response, callback) {
                 tempObj.imgURL = "https://image.tmdb.org/t/p/w154"+ response.results[x].poster_path;
             }
             else{
-                tempObj.imgURL = "/cst336/extraCredit/img/unavailable-200x145.png";
+                tempObj.imgURL = "/extraCredit/img/unavailable-200x145.png";
             }
             tempObj.overview = response.results[x].overview;
             movies.push(tempObj);
