@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSUMB Movie Database</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url("css/global.css");
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" defer></script>
+    <script src="js/global.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.php"><img src="/cst336/extraCredit/img/popcorn-box.png"></img></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active-nav" href="index.html"><i class="fa fa-home"></i> Home</a>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <header>
+            <h1>CSUMB Movie Database</h1>
+            <h4><a href="https://www.themoviedb.org">Powered by themoviedb.org!</a></h4>
+            <hr>
+        </header>
+        <div class="main-content" id="main-search-div">
+            <input class="search-controls" placeholder="Movie Title" type="text" name="product-search" id="name-search"><button class="search-controls disabled" id="product-search-button"><i class="fa fa-search"></i> Search</button>
+            <div id="search-count-container" class="noDisplay"><h4 id="search-count-label"><span id="search-value"></span> has been searched for <span id="search-count"></span> time(s).</h4></div>
+            <div id="products">
+                <img class="loading" id="product-loading" src="/cst336/extraCredit/img/loadingGif.gif"></img>
+                <table id="product-table">
+                </table>
+            </div>
+            <h4 id="product-search-error" class="error-font">Error searching for movies. Please refresh and try again.</h4>
+            <h4 id="product-search-none">No search results.</h4>
+        </div>
+    </div>
+</body>
+
+</html>
