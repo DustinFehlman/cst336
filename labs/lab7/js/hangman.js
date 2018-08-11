@@ -21,7 +21,6 @@ function startGame() {
     initBoard();
     updateBoard();
     createLetters();
-    printCorrectWords();
 }
 
 function initBoard() {
